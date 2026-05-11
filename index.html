@@ -1,8 +1,515 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<!-- 以下方式定时转到其他页面 -->
-<meta http-equiv="refresh" content="0;url=https://www.jacksung.cn"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zijiang Song — AI for Science Researcher at East China Normal University. Deep learning for remote sensing, Earth observation, and meteorological forecasting.">
+  <title>Zijiang Song — Personal Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">Zijiang Song</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#patents">Patents</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-name">Zijiang Song</h1>
+        <p class="hero-subtitle">AI for Science Researcher</p>
+        <p class="hero-affiliation">
+          <i class="fas fa-map-marker-alt"></i> East China Normal University &nbsp;|&nbsp; Shanghai, China
+        </p>
+        <p class="hero-bio">
+          Passionate about applying deep learning to Earth system science — from satellite precipitation estimation and meteorological downscaling to wetland carbon stock assessment. My research bridges artificial intelligence and geoscience to tackle real-world environmental challenges.
+        </p>
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?user=VuRoOFwAAAAJ&hl=zh-CN" target="_blank" class="hero-link" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+          </a>
+          <a href="https://github.com/songzijiang" target="_blank" class="hero-link" title="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="mailto:zijiang.song@stu.ecnu.edu.cn" class="hero-link" title="Email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">68</span>
+            <span class="stat-label">Citations</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">h-index</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">9</span>
+            <span class="stat-label">Publications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">38</span>
+            <span class="stat-label">GitHub Repos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Research Focus</h3>
+          <p>AI for Science — leveraging deep learning to solve pressing challenges in Earth observation, meteorological forecasting, and environmental monitoring.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-building-columns"></i></div>
+          <h3>Affiliation</h3>
+          <p>East China Normal University (华东师范大学)<br>Member of <a href="https://github.com/ECNU-geoscience" target="_blank">ECNU-geoscience</a> research group</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-location-dot"></i></div>
+          <h3>Location</h3>
+          <p>Shanghai / Suzhou, China</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-list">
+
+        <div class="edu-item">
+          <div class="edu-badge">2023 – Present</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Ph.D. in Physical Geography</h3>
+            <p class="edu-school">East China Normal University (华东师范大学) <span class="edu-tag tag-985">985</span> <span class="edu-tag tag-211">211</span> <span class="edu-tag tag-double">双一流</span></p>
+            <p class="edu-dept">School of Geographic Sciences · Key Laboratory of Geographic Information Science, Ministry of Education</p>
+            <p class="edu-detail">GPA: 3.7/4.0 &nbsp;|&nbsp; Shanghai</p>
+            <p class="edu-awards"><i class="fas fa-trophy"></i> First-class Doctoral Academic Scholarship, Academic Scholarship, First Prize in Doctoral Salon, Excellent Report Award at Earth System Numerical Simulation Science Conference</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-badge">2020 – 2023</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">M.Eng. in Computer Technology</h3>
+            <p class="edu-school">Soochow University (苏州大学) <span class="edu-tag tag-211">211</span> <span class="edu-tag tag-double">双一流</span></p>
+            <p class="edu-dept">School of Computer Science and Technology</p>
+            <p class="edu-detail">GPA: 3.7/4.0 (Top 15%) &nbsp;|&nbsp; Suzhou</p>
+            <p class="edu-awards"><i class="fas fa-trophy"></i> First/Second/Third-class Graduate Academic Scholarship</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-badge">2014 – 2018</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">B.Sc. in Geographic Information Science</h3>
+            <p class="edu-school">Suzhou University of Science and Technology (苏州科技大学)</p>
+            <p class="edu-dept">School of Environmental Science and Engineering</p>
+            <p class="edu-detail">GPA: 3.8/4.0 (Top 5%) &nbsp;|&nbsp; Suzhou</p>
+            <p class="edu-awards"><i class="fas fa-trophy"></i> National Scholarship, Special Comprehensive Scholarship (Top 2%), Merit Student, Outstanding Class Leader, Outstanding Graduate Thesis, Outstanding Graduate</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="section-title">Research Interests</h2>
+      <div class="research-grid">
+        <div class="research-tag">
+          <i class="fas fa-satellite"></i>
+          <span>Remote Sensing</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-cloud-rain"></i>
+          <span>Precipitation Estimation</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-chart-line"></i>
+          <span>Meteorological Forecasting</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-image"></i>
+          <span>Super-Resolution</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-tree"></i>
+          <span>Carbon Stock Estimation</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-water"></i>
+          <span>Coastal Wetlands</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-database"></i>
+          <span>Earth Observation Datasets</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-flask"></i>
+          <span>AI for Science</span>
+        </div>
+        <div class="research-tag">
+          <i class="fas fa-brain"></i>
+          <span>Deep Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Selected Publications</h2>
+      <p class="section-subtitle">
+        <i class="fas fa-quote-left"></i>
+        First-author publications are marked with <strong>bold</strong> name.
+        <a href="https://scholar.google.com/citations?user=VuRoOFwAAAAJ&hl=zh-CN" target="_blank">View all on Google Scholar <i class="fas fa-arrow-right"></i></a>
+      </p>
+
+      <div class="pub-filters">
+        <button class="pub-filter active" data-year="all">All</button>
+        <button class="pub-filter" data-year="2026">2026</button>
+        <button class="pub-filter" data-year="2025">2025</button>
+        <button class="pub-filter" data-year="2024">2024</button>
+        <button class="pub-filter" data-year="2022">2022</button>
+      </div>
+
+      <div class="publications-list">
+
+        <div class="pub-item" data-year="2026">
+          <div class="pub-year-badge">2026</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              Huayu: Advanced real-time satellite-based precipitation estimation
+            </h3>
+            <p class="pub-authors"><strong>Z Song</strong>, T Liu, L Yuan, Y Li, A Xu, X Sun, Y Li, F Lu, M Liu</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> International Journal of Applied Earth Observation & Geoinformation, Vol. 149
+              <span class="pub-cas q1">CAS 地球科学 1区</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2026">
+          <div class="pub-year-badge">2026</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              CCAV-10m: An annual spatiotemporal dataset for eastern coastal China's wetland vegetation
+            </h3>
+            <p class="pub-authors">Y Li, L Yuan, T Liu, <strong>Z Song</strong>, S Yang, Z Zhu, M Liu</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> Earth System Science Data, 18(4), 2907–2927
+              <span class="pub-cas q1">CAS 地球科学 1区</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2026">
+          <div class="pub-year-badge">2026</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              Toward urban sustainability: Assessing SDG11.2 via functional zone analysis in five Chinese cities
+            </h3>
+            <p class="pub-authors">L Yuan, X Zhang, <strong>Z Song</strong>, Y Li, P Zang, M Liu</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> npj Urban Sustainability
+              <span class="pub-cas q2">CAS 环境科学 2区</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2025">
+          <div class="pub-year-badge">2025</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              <a href="https://doi.org/10.5194/essd-17-1501-2025" target="_blank">MDG625: A daily high-resolution meteorological dataset derived by geopotential-guided attention network in Asia (1940–2023) <i class="fas fa-external-link-alt"></i></a>
+            </h3>
+            <p class="pub-authors"><strong>Z Song</strong>, Z Cheng, Y Li, S Yu, X Zhang, L Yuan, M Liu</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> Earth System Science Data, 17(4), 1501–1514
+              <span class="pub-cas q1">CAS 地球科学 1区</span>
+            </p>
+            <span class="pub-citations"><i class="fas fa-quote-right"></i> 2 citations</span>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2025">
+          <div class="pub-year-badge">2025</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              GeoAttX: A Novel Deep Learning Framework for Quarter-Hourly Cloud Image and Precipitation Forecasting
+            </h3>
+            <p class="pub-authors"><strong>Z Song</strong>, L Yuan, Y Li, Z Cheng, X Chen, M Liu</p>
+            <p class="pub-venue">
+              <span class="pub-preprint">Preprint</span> SSRN 5168620
+            </p>
+            <span class="pub-citations"><i class="fas fa-quote-right"></i> 1 citation</span>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2024">
+          <div class="pub-year-badge">2024</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              Salt marsh carbon stock estimation using deep learning with Sentinel-1 SAR of the Yangtze River estuary, China
+            </h3>
+            <p class="pub-authors">Y Li, L Yuan, <strong>Z Song</strong>, S Yu, X Zhang, B Tian, M Liu</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> International Journal of Applied Earth Observation & Geoinformation, Vol. 133
+              <span class="pub-cas q1">CAS 地球科学 1区</span>
+            </p>
+            <span class="pub-citations"><i class="fas fa-quote-right"></i> 21 citations</span>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2024">
+          <div class="pub-year-badge">2024</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              Flood simulation using LISFLOOD and inundation effects: A case study of Typhoon In-Fa in Shanghai
+            </h3>
+            <p class="pub-authors">J Li, L Yuan, Y Hu, A Xu, Z Cheng, <strong>Z Song</strong>, X Zhang, W Zhu, W Shang, et al.</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> Science of The Total Environment, 954, 176372
+              <span class="pub-cas q2">CAS 环境科学 2区</span>
+            </p>
+            <span class="pub-citations"><i class="fas fa-quote-right"></i> 18 citations</span>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2022">
+          <div class="pub-year-badge">2022</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              <a href="https://doi.org/10.1109/LSP.2022.3217098" target="_blank">A direction-decoupled non-local attention network for single image super-resolution <i class="fas fa-external-link-alt"></i></a>
+            </h3>
+            <p class="pub-authors"><strong>Z Song</strong>, B Zhong, J Ji, KK Ma</p>
+            <p class="pub-venue">
+              <i class="fas fa-journal-whills"></i> IEEE Signal Processing Letters, 29, 2218–2222
+              <span class="pub-cas q3">CAS 计算机科学 3区</span>
+            </p>
+            <span class="pub-citations"><i class="fas fa-quote-right"></i> 16 citations</span>
+          </div>
+        </div>
+
+        <div class="pub-item" data-year="2022">
+          <div class="pub-year-badge">2022</div>
+          <div class="pub-content">
+            <h3 class="pub-title">
+              A lightweight local-global attention network for single image super-resolution
+            </h3>
+            <p class="pub-authors"><strong>Z Song</strong>, B Zhong</p>
+            <p class="pub-venue">
+              <i class="fas fa-landmark"></i> Proceedings of Asian Conference on Computer Vision (ACCV), 4395–4410
+              <span class="pub-cas ccf">CCF-C 会议</span>
+            </p>
+            <span class="pub-citations"><i class="fas fa-quote-right"></i> 10 citations</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="patents" class="section">
+    <div class="container">
+      <h2 class="section-title">Patents</h2>
+      <div class="publications-list">
+
+        <div class="pub-item">
+          <div class="pub-year-badge"><i class="fas fa-file-signature"></i></div>
+          <div class="pub-content">
+            <h3 class="pub-title">针对图像超分辨率的方向解耦的注意力方法和系统</h3>
+            <p class="pub-authors"><strong>宋子江</strong>, 钟宝江</p>
+            <p class="pub-venue">
+              <i class="fas fa-certificate"></i> 专利号：2022112221739 &nbsp;|&nbsp; 类型：发明 &nbsp;|&nbsp; 申请日：2022-10-08
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year-badge"><i class="fas fa-file-signature"></i></div>
+          <div class="pub-content">
+            <h3 class="pub-title">一种图像高清还原方法</h3>
+            <p class="pub-authors"><strong>宋子江</strong>, 钟宝江</p>
+            <p class="pub-venue">
+              <i class="fas fa-certificate"></i> 专利号：2022113103119 &nbsp;|&nbsp; 类型：发明 &nbsp;|&nbsp; 申请日：2022-10-25
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">GitHub Projects</h2>
+      <p class="section-subtitle">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/songzijiang" target="_blank">github.com/songzijiang</a>
+        &mdash; 38 repositories &middot; 16 followers
+      </p>
+
+      <div class="projects-grid">
+
+        <a href="https://github.com/songzijiang/GeoAN" target="_blank" class="project-card">
+          <div class="project-header">
+            <i class="fab fa-github"></i>
+            <span class="project-stars"><i class="fas fa-star"></i> 10</span>
+          </div>
+          <h3 class="project-name">GeoAN</h3>
+          <p class="project-desc">Official code of GeoAN — geopotential-guided attention network for meteorological downscaling</p>
+          <span class="project-lang">Python</span>
+        </a>
+
+        <a href="https://github.com/songzijiang/LGAN" target="_blank" class="project-card">
+          <div class="project-header">
+            <i class="fab fa-github"></i>
+            <span class="project-stars"><i class="fas fa-star"></i> 8</span>
+          </div>
+          <h3 class="project-name">LGAN</h3>
+          <p class="project-desc">Source codes for LGAN — lightweight local-global attention network for super-resolution</p>
+          <span class="project-lang">Python</span>
+        </a>
+
+        <a href="https://github.com/songzijiang/GeoAttX" target="_blank" class="project-card">
+          <div class="project-header">
+            <i class="fab fa-github"></i>
+            <span class="project-stars"><i class="fas fa-star"></i> 6</span>
+          </div>
+          <h3 class="project-name">GeoAttX</h3>
+          <p class="project-desc">Official code of GeoAttX — quarter-hourly cloud image and precipitation forecasting</p>
+          <span class="project-lang">Python</span>
+        </a>
+
+        <a href="https://github.com/songzijiang/AI_tools" target="_blank" class="project-card">
+          <div class="project-header">
+            <i class="fab fa-github"></i>
+            <span class="project-stars"><i class="fas fa-star"></i> 3</span>
+          </div>
+          <h3 class="project-name">AI_tools</h3>
+          <p class="project-desc">Collection of AI and deep learning utility tools for geoscience research</p>
+          <span class="project-lang">Python</span>
+        </a>
+
+        <a href="https://github.com/songzijiang/jacksung" target="_blank" class="project-card">
+          <div class="project-header">
+            <i class="fab fa-github"></i>
+            <span class="project-stars"><i class="fas fa-star"></i> 2</span>
+          </div>
+          <h3 class="project-name">jacksung</h3>
+          <p class="project-desc">Personal projects and experiments</p>
+          <span class="project-lang">Python</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <h3 class="subsection-title"><i class="fas fa-briefcase"></i> Work</h3>
+      <div class="education-list">
+
+        <div class="edu-item">
+          <div class="edu-badge">2025.09 – 2026.09</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Core Algorithm Lead</h3>
+            <p class="edu-school">Shanghai Meteorological Bureau · Technical Service (科研合作项目)</p>
+            <p class="edu-detail">Collaborating with Shanghai Meteorological Disaster Prevention Technology Center on satellite cloud image extrapolation and precipitation forecasting research for real-world deployment.</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-badge">2018.07 – 2019.08</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Java Development Engineer</h3>
+            <p class="edu-school">Suzhou Keda Technology Co., Ltd. (苏州科达科技股份有限公司) <span class="edu-tag tag-listed">上市公司</span></p>
+            <p class="edu-dept">Industry Application Development Department · Suzhou</p>
+            <p class="edu-detail">Core developer for Keda Fusion Communication Open Platform — a J2EE enterprise solution involving multi-device query optimization, microservice gateway, and API management.</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-badge">Part-time</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Python Lecturer (Part-time)</h3>
+            <p class="edu-school">Suzhou Industrial Park Vocational Technical School (苏州工业园区职业技术学校)</p>
+            <p class="edu-dept">School of Artificial Intelligence · Suzhou</p>
+            <p class="edu-detail">Taught Python courses to two classes and successfully completed the teaching tasks with high student satisfaction.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:zijiang.song@stu.ecnu.edu.cn" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>zijiang.song@stu.ecnu.edu.cn</span>
+        </a>
+        <a href="mailto:15371827329@163.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>15371827329@163.com</span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=VuRoOFwAAAAJ&hl=zh-CN" target="_blank" class="contact-card">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Google Scholar</span>
+        </a>
+        <a href="https://github.com/songzijiang" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.jacksung.cn" target="_blank" class="contact-card">
+          <i class="fas fa-globe"></i>
+          <span>jacksung.cn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Zijiang Song. Built with <i class="fas fa-heart"></i> at East China Normal University.</p>
+      <p class="footer-powered">Powered by <img src="deepseek-logo.png" alt="DeepSeek" class="deepseek-logo"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

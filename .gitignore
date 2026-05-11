@@ -1,0 +1,7 @@
+node_modules/
+.claude/
+.remember/
+*.pdf
+package.json
+package-lock.json
+server.js
