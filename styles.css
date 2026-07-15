@@ -712,6 +712,14 @@ a:hover {
   vertical-align: middle;
   margin: 0 2px;
 }
+.powered-separator {
+  margin: 0 2px;
+}
+.codex-name {
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {

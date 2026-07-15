@@ -81,8 +81,25 @@
 
 // === Publication Year Filter ===
 (function() {
-  const filters = document.querySelectorAll('.pub-filter');
-  const items = document.querySelectorAll('.pub-item');
+  const publications = document.getElementById('publications');
+  const hero = document.querySelector('.hero');
+  if (publications && hero) {
+    hero.insertAdjacentElement('afterend', publications);
+  }
+
+  const filters = publications ? publications.querySelectorAll('.pub-filter') : [];
+  const items = publications ? Array.from(publications.querySelectorAll('.pub-item')) : [];
+  const list = publications ? publications.querySelector('.publications-list') : null;
+
+  if (list) {
+    items.sort((a, b) =>
+      Number(a.dataset.authorPosition) - Number(b.dataset.authorPosition) ||
+      Number(a.dataset.zoneRank) - Number(b.dataset.zoneRank) ||
+      Number(b.dataset.citations) - Number(a.dataset.citations) ||
+      Number(b.dataset.published) - Number(a.dataset.published)
+    );
+    items.forEach(item => list.appendChild(item));
+  }
 
   if (!filters.length) return;
 
